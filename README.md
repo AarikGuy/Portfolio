@@ -27,12 +27,15 @@ Built with accessibility, performance, and maintainability in mind.
    git clone https://github.com/yourusername/portfolio.git
 
 2. **Navigate into the project**
+    ```bash
     cd portfolio
 
 3. **Open in browser**
+    ```bash
     open homepage.html
-
+    ```
     or start a dev server if using a bundler:
-
+    ```bash
     npm install
     npm run dev
+    ```
