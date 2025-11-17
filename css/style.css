@@ -5,6 +5,14 @@ body {
     color: #333;
 }
 
+.profile img{
+    margin-left: 180px;
+    width: 240px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 header {
     background: #111;
     color: white;
@@ -37,6 +45,7 @@ nav a {
 }
 
 #hero {
+    margin-left: 70px;
     color: white;
     text-align: center;
 }
