@@ -17,7 +17,7 @@ Built with accessibility, performance, and maintainability in mind.
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/) / [Bootstrap](https://getbootstrap.com/) (choose your framework)
 - **Build Tools:** Vite / Webpack (if applicable)
-- **Deployment:** GitHub Pages, Netlify, or Vercel
+- **Deployment:** Vercel
 
 
 ## 🚀 Getting Started
