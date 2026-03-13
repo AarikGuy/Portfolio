@@ -44,14 +44,17 @@ nav a {
 .intro {
     display: flex;
     width: 100%;
-    margin: 0;
+    align-items: center; 
+    position: relative;
     background: linear-gradient(120deg, #080188, #cdddf7);
 }
 
 #hero {
-    margin-left: 70px;
-    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
+    color: white;
 }
 
 .btn {
@@ -89,4 +92,9 @@ footer {
     padding: 1rem;
     background: #111;
     color: white;
+}
+
+
+.hero-content{
+    max-width: 500px;
 }
