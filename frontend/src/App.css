@@ -7,18 +7,33 @@ h1, h2{
 .contact-logos ul{
     display: flex;
     align-items: center;
-    
+    gap: 4px; /* adjust this */
+    padding: 0;
+    margin: 0;
 }
 
 .contact-logos li{
-    /* display: flex; */
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
-    max-width: 100%;
-    height: auto;
-    transform: scale(0.4);
+    /* filter: invert(1); */
+}
+
+.contact-logos li img{
+    width: 40px;   /* 👈 real size control */
+    height: 40px;
+    display: block;
     filter: invert(1);
+}
+
+.contact-logos a:active,
+.contact-logos a:focus {
+    transform: scale(.85);
+}
+
+.contact-logos a{
+    display: inline-block;
+    transition: transform 0.15s ease;
 }
 
 .contact-logos{
@@ -29,8 +44,10 @@ h1, h2{
 
 }
 
-.contact-logos li:hover{
-    transform: scale(0.35);
+.contact-logos li:hover, 
+.contact-logos li:focus{
+    transform: scale(.85);
+    transition: transform 0.15s ease;
 }
 
 
