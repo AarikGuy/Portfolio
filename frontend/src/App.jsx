@@ -12,7 +12,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
       <Footer />
-    </>
+    </div>
   );
   // return <h1>Hello React</h1>;
 }
