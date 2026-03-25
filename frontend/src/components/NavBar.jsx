@@ -2,6 +2,7 @@ import facebookLogo from "../assets/facebook.png";
 import githubLogo from "../assets/github.png";
 import instagramLogo from "../assets/instagram.png";
 import linkedinLogo from "../assets/linkedin.png";
+import { Link } from "react-router-dom";
 
 
 function Navbar() {
@@ -9,9 +10,9 @@ function Navbar() {
     <header>
         <nav>
             <ul className="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><Link to="/">About</Link></li>
+                <li><Link to="/resume">Resume</Link></li>
+                <li><Link to="/projects">Projects</Link></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 

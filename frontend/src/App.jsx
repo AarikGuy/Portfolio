@@ -1,19 +1,25 @@
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import ProjectCarousel from "./components/ProjectCarousel";
 import Footer from "./components/Footer";
 import './App.css';
+
+// pages
+import Home from "./pages/Home";
+import ResumePage from "./pages/ResumePage";
+import Projects from "./pages/Projects";
+// import Contact from "./pages/ContactInfo";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Resume />
-      <ProjectCarousel />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/projects" element={<Projects />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
       <Footer />
     </>
   );
