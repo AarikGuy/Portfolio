@@ -18,7 +18,7 @@ function Hero() {
             building impactful digital experiences.
           </p>
 
-          <a href="#projects" className="btn">
+          <a href="/projects" className="btn">
             View My Work
           </a>
         </div>
