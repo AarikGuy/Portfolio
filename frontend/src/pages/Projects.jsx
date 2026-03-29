@@ -1,21 +1,27 @@
 import ProjectCarousel from "../components/ProjectCarousel";
+import projectsImage from "../assets/projectsImage.jpg";
 
 function Projects() {
   return (
     <>
     <div className="intro">
-      <h2>Projects</h2>
+      <div className="projects-intro">
+        <h2>Projects</h2>
+        <p>
+          Here are some of the projects I’ve built, showcasing my experience in
+          full-stack development, test suites, modern web technologies,
+          and personal interests.
+        </p>
 
-      <p>
-        Here are some of the projects I’ve built, showcasing my experience in
-        full-stack development, test suites, modern web technologies,
-        and personal interests.
-      </p>
+        <p>
+          Each project reflects my focus on clean design, usability, and
+          building practical, real-world solutions.
+        </p>
+      </div>
 
-      <p>
-        Each project reflects my focus on clean design, usability, and
-        building practical, real-world solutions.
-      </p>
+      <div className="projects-pic">
+        <img src={projectsImage}></img>
+      </div>
     </div>
 
     

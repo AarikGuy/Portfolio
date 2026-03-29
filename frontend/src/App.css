@@ -9,9 +9,14 @@ html, body, #root {
     background: linear-gradient(120deg, #000000, #1a247e);
 }
 
-h1, h2{
-    font-size: 42px;
+h1{
     font-weight: 400;
+}
+
+h2{
+    font-size: 42px;
+    font-weight: 600;
+    /* font- */
     margin: 10px 0;
 }
 
@@ -115,9 +120,36 @@ nav a {
     display: flex;
     /* width: 100%; */
     align-items: center; 
-    gap: 0;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
     /* position: relative; */
     background: linear-gradient(120deg, #080188, #cdddf7);
+}
+
+.projects-intro{
+    /* padding: 3rem 2rem; */
+    /* text-align: left; */
+    flex: 1;
+}
+
+
+
+.projects-intro{
+    flex: 1;
+    /* text-align: top; */
+}
+
+.projects-pic {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+.projects-pic img{
+    width: clamp(200px, 25vw, 400px);
+    height: auto;
+    padding: .5rem;
 }
 
 #hero {
@@ -131,9 +163,6 @@ nav a {
     color: white;
 }
 
-#hero p{
-
-}
 
 .btn {
     display: inline-block;

@@ -9,9 +9,9 @@ function Hero() {
 
       <section id="hero">
         <div className="hero-content">
-          <h2>
-            Hello, I’m <span>Aarik Guy</span>
-          </h2>
+          <h1>
+            Hello, I’m Aarik Guy
+          </h1>
 
           <p>
             I’m currently a Software Accessibility Tester passionate about
