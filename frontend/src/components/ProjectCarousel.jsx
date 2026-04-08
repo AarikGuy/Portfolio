@@ -1,5 +1,6 @@
 import capstoneProject from '../assets/capstone.png';
 import reactLogo from '../assets/react.svg';
+import gamePic from '../assets/game.png';
 
 function ProjectCarousel() {
 
@@ -11,9 +12,9 @@ function ProjectCarousel() {
       link: "#"
     },
     {
-      title: "React Project",
-      description: "A project built using React showcasing component-based architecture.",
-      image: reactLogo,
+      title: "Top-Down Pixel Art Game",
+      description: "A top-down 2D pixel art game built in Godot, featuring custom tilemaps, dialogue systems, and core gameplay mechanics. Developed with GDScript and C#, with original art and audio, and planned for Steam release.",
+      image: gamePic,
       link: "#"
     },
     {
@@ -45,11 +46,13 @@ function ProjectCarousel() {
             key={index}
             className={`carousel-item ${index === 0 ? "active" : ""}`}
           >
+            <div className="carousel-image-wrapper">
             <img
               src={project.image}
               className="d-block w-100"
               alt={project.title}
             />
+            </div>
 
             <div className="carousel-caption d-none d-md-block">
               <h5>{project.title}</h5>
