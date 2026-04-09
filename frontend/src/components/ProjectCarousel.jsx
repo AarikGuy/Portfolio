@@ -27,6 +27,26 @@ function ProjectCarousel() {
 
   return (
     <div id="carouselExampleCaptions" className="carousel slide">
+
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span className="carousel-control-prev-icon" />
+      </button>
+
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span className="carousel-control-next-icon" />
+      </button>
+
+
       <div className="carousel-indicators">
         {projects.map((_, index) => (
           <button
@@ -57,33 +77,15 @@ function ProjectCarousel() {
             <div className="carousel-caption d-none d-md-block">
               <h5>{project.title}</h5>
               <p>{project.description}</p>
-              <p>
+              {/* <p>
                 <a href={project.link} aria-label={`View ${project.title} details`}>
                   View Project →
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         ))}
       </div>
-
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" />
-      </button>
-
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" />
-      </button>
 
     </div>
   );
