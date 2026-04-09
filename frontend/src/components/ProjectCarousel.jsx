@@ -49,7 +49,7 @@ function ProjectCarousel() {
             <div className="carousel-image-wrapper">
             <img
               src={project.image}
-              className="d-block w-100"
+              className="carousel-image"
               alt={project.title}
             />
             </div>
