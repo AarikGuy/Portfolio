@@ -322,3 +322,16 @@ footer p{
 .carousel-indicators{
     bottom:  -30px;
 }
+
+#about{
+    width: 100%;
+}
+
+.accordion-item{
+    /* background-color: rgb(185, 185, 185); */
+}
+
+.my-accordion .accordion-item {
+  border-radius: 15px;
+  overflow: hidden;
+}
