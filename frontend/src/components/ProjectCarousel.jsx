@@ -1,6 +1,7 @@
 import capstoneProject from '../assets/capstone.png';
 import reactLogo from '../assets/react.svg';
 import gamePic from '../assets/game.png';
+import myLeg from '../assets/MyLeg.png';
 
 function ProjectCarousel() {
 
@@ -18,9 +19,9 @@ function ProjectCarousel() {
       link: "#"
     },
     {
-      title: "Another Project",
-      description: "Some representative placeholder content for the third slide.",
-      image: reactLogo,
+      title: "Legbook",
+      description: "Essentially a miniaturized Facebook clone made for my Full Stack Web Development class in University.",
+      image: myLeg,
       link: "#"
     }
   ];
