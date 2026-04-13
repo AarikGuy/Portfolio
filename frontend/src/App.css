@@ -289,6 +289,10 @@ footer p{
 .carousel-control-next-icon {
     filter: brightness(200%);
 }
+.carousel-control-next:focus,
+.carousel-control-prev:focus{
+    border: 2px solid white;
+}
 
 .carousel-inner{
     width: 100%;
