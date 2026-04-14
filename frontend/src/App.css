@@ -328,10 +328,17 @@ footer p{
 }
 
 .accordion-item{
-    /* background-color: rgb(185, 185, 185); */
+   border-color: #8f8f8f;
 }
 
 .my-accordion .accordion-item {
   border-radius: 15px;
   overflow: hidden;
+  background-color: #212529;
+  color: white;
+}
+
+.accordion-button.collapsed{
+    background-color: #212529;
+    color: white;
 }
