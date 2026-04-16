@@ -4,6 +4,7 @@ import About from "../components/About";
 function Home() {
   return (
     <>
+    <title>Home | Portfolio</title>
       <Hero />
       <About />
     </>
