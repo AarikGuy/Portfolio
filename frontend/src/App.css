@@ -123,7 +123,7 @@ nav a {
 .intro {
     display: flex;
     /* width: 100%; */
-    align-items: center; 
+    /* align-items: center;  */
     gap: 2rem;
     justify-content: center;
     padding: 2rem;
@@ -363,5 +363,33 @@ footer p{
 .accordion-button:not(.collapsed) {
   background-color: #383c41;
   color: white;
+}
+
+.resume-heading{
+    position: relative;
+    /* top: -35px; */
+    height: 100%;
+}
+
+.resume-text{
+    width: 800px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.resume-iframe{
+    width: 100%;
+    max-width: 800px;
+    height: 1000px;
+    margin: auto;
+    display: block;
+}
+
+.resume-container{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
