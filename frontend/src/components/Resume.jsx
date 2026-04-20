@@ -18,7 +18,8 @@ function Resume(){
   <div className='resume-container'>
     <iframe className='resume-iframe'
         src={resumeDoc}
-        title="Aarik's Resume">
+        title="Aarik's Resume"
+        loading="lazy">
     </iframe>
   </div>
 

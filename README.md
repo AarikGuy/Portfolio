@@ -1,7 +1,6 @@
 # Personal Portfolio Website
 
-A clean, responsive, and modern portfolio website to showcase my work, skills, and experience.  
-Built with accessibility, performance, and maintainability in mind.
+A clean, responsive, and modern portfolio website to showcase my work, skills, and experience. Built with accessibility, performance, and maintainability in mind.
 
 ## ✨ Features
 
@@ -14,9 +13,9 @@ Built with accessibility, performance, and maintainability in mind.
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Frontend:** HTML, CSS, JavaScript+React
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/) / [Bootstrap](https://getbootstrap.com/) 
-- **Build Tools:** Vite / Webpack (if applicable)
+- **Build Tools:** Vite / Webpack
 - **Deployment:** Vercel
 
 
@@ -24,17 +23,14 @@ Built with accessibility, performance, and maintainability in mind.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/AarikGuy/portfolio.git
 
 2. **Navigate into the project**
     ```bash
     cd portfolio
 
 3. **Open in browser**
-    ```bash
-    open homepage.html
-    ```
-    or start a dev server if using a bundler:
+   Start a dev server:
     ```bash
     npm install
     npm run dev
