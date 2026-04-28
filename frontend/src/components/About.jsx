@@ -24,6 +24,10 @@ function About(){
         {
             question: "What kinds of projects do you enjoy building most?",
             answer: "I enjoy a mix of web development and game development."
+        },
+        {
+          question: "Can I get the github link to your portfolio?",
+          answer: "Yes :) https://github.com/AarikGuy/Portfolio"
         }
     ];
 

@@ -4,7 +4,7 @@ function Resume(){
     return(
     <>
      <div className='intro'>
-        <div className='resume-text'>
+        <div className='intro-heading-and-text'>
             <h2>Resume</h2>
             <p>
                 This is my most up-to-date resume, and I’ll continue updating it as my career grows. I created it entirely   

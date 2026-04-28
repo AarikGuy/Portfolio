@@ -5,19 +5,38 @@ function ContactInfo() {
     <>
         <title>Contact Info | Portfolio</title>
         <div className="intro">
-            <div className="contact-heading">
+            <div className="intro-heading-and-text">
                 <h2>Contact</h2>
-            </div>
-            <p>
+                <p>
                 Feel free to reach out regarding collaboration opportunities, interview feedback, or suggestions for website improvements and new features. 
-            </p>
+                </p>
+            </div>
         </div>
         <div className="feedback-section">
-            <h2>Let's Connect</h2>
-            <div className="instructions-text">
-                <p>
+            <h3>Let's Connect</h3>
+            <div className="instructions-container">
+                <div className="name-fields">
+                    <div className="field">
+                    <label htmlFor="first-name">First name:</label>
+                    <input type="text" id="first-name"/>
+                </div>
+                <div className="field">
+                    <label htmlFor="last-name">Last name:</label>
+                    <input type="text" id="last-name"/>
+                </div>
+                </div>
+                <div className="field">
+                    <label htmlFor="feedback">Feedback:</label>
 
-                </p>
+                    <p className="field-help">
+                        If you have previously interviewed me, I would greatly appreciate any feedback on 
+                        my performance and areas where I can improve. If you also have suggestions for improving 
+                        my website, please feel free to share them. Any feedback is sincerely appreciated.
+                    </p>
+                    
+                    <textarea id="feedback" rows="6" placeholder="Write your feedback here..." aria-required="true"/>
+                </div>
+                <input type="submit" value="Submit"></input>
             </div>
         </div>
     </>
