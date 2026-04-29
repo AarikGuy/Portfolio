@@ -24,6 +24,15 @@ function ContactInfo() {
                     <label htmlFor="last-name">Last name:</label>
                     <input type="text" id="last-name"/>
                 </div>
+                <div className="field">
+                    <label htmlFor="phone">Phone Number:</label>
+                    <input type="text" id="phone"/>
+                </div>
+                <div className="field">
+                    <label htmlFor="email">Email:</label>
+                    <input type="text" id="email"/>
+                </div>
+                
                 </div>
                 <div className="field">
                     <label htmlFor="feedback">Feedback:</label>
