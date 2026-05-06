@@ -14,7 +14,7 @@ A clean, responsive, and modern portfolio website to showcase my work, skills, a
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript+React
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/) / [Bootstrap](https://getbootstrap.com/) 
+- **Styling:** [Bootstrap](https://getbootstrap.com/) 
 - **Build Tools:** Vite / Webpack
 - **Deployment:** Vercel
 
@@ -35,3 +35,8 @@ A clean, responsive, and modern portfolio website to showcase my work, skills, a
     npm install
     npm run dev
     ```
+
+4. **Start the server**
+   ```bash
+   dotnet run
+   ```
