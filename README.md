@@ -37,6 +37,7 @@ A clean, responsive, and modern portfolio website to showcase my work, skills, a
     ```
 
 4. **Start the server**
+   Start a new terminal
    ```bash
    dotnet run
    ```
