@@ -5,7 +5,7 @@ import linkedinLogo from "../assets/linkedin.png";
 import { Link } from "react-router-dom";
 
 
-function Navbar() {
+function NavBar() {
     return(
     <header>
         <nav>
@@ -29,4 +29,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default NavBar;
