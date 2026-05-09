@@ -1,4 +1,5 @@
 import profilePic from "../assets/profile_picture.jpg";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -19,9 +20,7 @@ function Hero() {
             and helping clients improve their user experience.
           </p>
 
-          <a href="/projects" className="btn">
-            View My Work
-          </a>
+          <Link to="/projects" className="btn">View My Work</Link>
         </div>
       </section>
     </div>
