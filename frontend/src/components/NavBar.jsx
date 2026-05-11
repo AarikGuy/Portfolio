@@ -18,10 +18,10 @@ function NavBar() {
 
         <div className="contact-logos">
             <ul>
-                <li><a href="https://www.facebook.com/aarik.guy/"><img src={facebookLogo}></img></a></li>
-                <li><a href="https://www.instagram.com/aarikguy/"><img src={instagramLogo}></img></a></li>
-                <li><a href="https://www.linkedin.com/in/aarik-guy/"><img src={linkedinLogo}></img></a></li>
-                <li><a href="https://github.com/AarikGuy"><img src={githubLogo}></img></a></li>
+                <li><a href="https://www.facebook.com/aarik.guy/" aria-label="facebook"><img src={facebookLogo}></img></a></li>
+                <li><a href="https://www.instagram.com/aarikguy/" aria-label="instragram"><img src={instagramLogo}></img></a></li>
+                <li><a href="https://www.linkedin.com/in/aarik-guy/" aria-label="linkedin"><img src={linkedinLogo}></img></a></li>
+                <li><a href="https://github.com/AarikGuy" aria-label="github"><img src={githubLogo}></img></a></li>
             </ul>
         </div>
         </nav>
