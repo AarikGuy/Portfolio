@@ -1,289 +1,350 @@
-html, body, #root {
-    height: 100%;
+html,
+body,
+#root {
+  height: 100%;
 }
 
-a{
-    color: white;
+a {
+  color: white;
 }
 
 .app-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: linear-gradient(120deg, #000000, #1a247e);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #000000, #1a247e);
 }
 
-h1{
-    font-weight: 400;
+h1 {
+  font-weight: 400;
 }
 
-h2{
-    font-size: 42px;
-    font-weight: 600;
-    margin: 10px 0;
+h2 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 10px 0;
 }
 
-.contact-logos ul{
-    display: flex;
-    align-items: center;
-    gap: 4px; /* adjust this */
-    padding: 0;
-    margin: 0;
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
 }
 
-.contact-logos li{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.profile img {
+  margin: 10px 0 10px 50%;
+  width: clamp(140px, 15vw, 240px);
+  height: auto;
+  aspect-ratio: 240 / 310;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.contact-logos li img{
-    width: 40px; 
-    height: 40px;
-    display: block;
-    filter: invert(1);
+header {
+  color: white;
+  padding: 1rem clamp(1rem, 5vw, 6rem);
+  overflow: visible;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  position: relative;
+  overflow: visible;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+.nav-links li {
+  white-space: nowrap;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-menu {
+  position: relative;
+  margin-left: auto;
+  flex-shrink: 0;
+  z-index: 3000;
+}
+
+.social-toggle {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 1px solid currentColor;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.contact-logos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.contact-logos li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-logos li img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  filter: invert(1);
+}
+
+.contact-logos a {
+  display: inline-flex;
+  transition: transform 0.15s ease;
 }
 
 .contact-logos a:active,
 .contact-logos a:focus {
-    transform: scale(.85);
+  transform: scale(0.85);
 }
 
-.contact-logos a{
-    display: inline-block;
-    transition: transform 0.15s ease;
+.contact-logos a:hover,
+.contact-logos li:hover,
+.contact-logos li:focus {
+  transform: scale(0.85);
+  transition: transform 0.15s ease;
 }
 
-.contact-logos{
-    display: flex;
+@media (max-width: 700px) {
+  .social-toggle {
+    display: inline-flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
+  }
 
-}
+  .contact-logos {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background: #111;
+    padding: 0.5rem;
+    border-radius: 10px;
+    gap: 0.75rem;
+    z-index: 4000;
+    pointer-events: auto;
+  }
 
-.contact-logos li:hover, 
-.contact-logos li:focus{
-    transform: scale(.85);
-    transition: transform 0.15s ease;
-}
-
-
-body {
-    margin: 0;
-    font-family: "Segoe UI",Arial,sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-}
-
-.profile img{
-    margin: 10px 0 10px 50%;
-    width: clamp(140px, 15vw, 240px);
-    height: auto;                     
-    aspect-ratio: 240 / 310;      
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-header {
-    color: white;
-    padding: 1rem clamp(1rem, 5vw, 6rem);
-}
-
-nav {
+  .contact-logos.open {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* TODO: I want a more elegant way to handle reflow. Wrapping is acceptable but is not visibly pleasing.*/
+  }
 }
 
-.nav-links{
-    gap: 4rem;
-}
+@media (max-width: 700px) {
+  header {
+    padding: 1rem;
+  }
 
-nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.95rem;
+  }
 }
 
 .intro {
-    display: flex;
-    width: 100%;
-    align-items: center; 
-    gap: 2rem;
-    justify-content: center;
-    padding: 2rem;
-    background: linear-gradient(120deg, #05015e, #6990ca);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(120deg, #05015e, #6990ca);
 }
 
-.projects-intro{
-    flex: 1;
-    width: 100%;
-    max-width: 600px;
-    min-width: 0;
-    height: auto;
+.projects-intro {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  min-width: 0;
+  height: auto;
 }
-
 
 .projects-pic {
-    flex: 1;
-    display: flex;
-    justify-content: center; 
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.projects-pic img{
-    width: clamp(200px, 25vw, 400px);
-    height: auto;
-    padding: .5rem;
+.projects-pic img {
+  width: clamp(200px, 25vw, 400px);
+  height: auto;
+  padding: 0.5rem;
 }
 
 #hero {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 17%;
-    transform: none;
-    text-align: center;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 17%;
+  transform: none;
+  text-align: center;
+  color: white;
 }
 
-#hero p{
-    text-align: left;
+#hero p {
+  text-align: left;
 }
-
 
 .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background: white;
-    color: #4d46db;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  color: #4d46db;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.btn:focus{
-    border: 2px solid white;
+.btn:focus {
+  border: 2px solid white;
 }
 
 section {
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 
 .project-grid {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .project-card {
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
 }
 
 footer {
-    text-align: center;
-    padding: 20px 1rem 4px 1rem;
-    background: #111;
-    color: white;
-    position: relative;
-    width: 100%;
-    margin-top: auto;
+  text-align: center;
+  padding: 20px 1rem 4px 1rem;
+  background: #111;
+  color: white;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
 }
 
-footer p{
-    margin: 0;
+footer p {
+  margin: 0;
 }
 
-
-.hero-content{
-    max-width: 600px;
+.hero-content {
+  max-width: 600px;
 }
 
-#contact-info{
-    list-style-type: none;
-    margin: center;
-    margin-top: 10px;
-    padding: 0;
+#contact-info {
+  list-style-type: none;
+  margin: center;
+  margin-top: 10px;
+  padding: 0;
 }
 
-#contact-info li{
-    display: inline-block;
-    margin-right: 30px;
+#contact-info li {
+  display: inline-block;
+  margin-right: 30px;
 }
 
-#contact-info li a{
-    text-decoration: none;
-    color: white;
+#contact-info li a {
+  text-decoration: none;
+  color: white;
 }
 
 #carouselExampleCaptions {
-    width: clamp(300px, 80vw, 1100px);
-    margin: 40px auto;
-    position: relative;
+  width: clamp(300px, 80vw, 1100px);
+  margin: 40px auto;
+  position: relative;
 }
 
 .carousel {
-    overflow: visible;
+  overflow: visible;
 }
 
-.carousel-caption{
-    position: static;
-    color: #ffffff;
-    text-shadow: none;
-    margin-top: 15px;
-    padding: 0 1rem;
+.carousel-caption {
+  position: static;
+  color: #ffffff;
+  text-shadow: none;
+  margin-top: 15px;
+  padding: 0 1rem;
 }
 
-.carousel-control-prev{
-    color: #000000;
-    text-shadow: none;
-    left: -80px;
-    height: 130px;
-    width: 40px;
-    top: 35%;             
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.carousel-control-prev {
+  color: #000000;
+  text-shadow: none;
+  left: -80px;
+  height: 130px;
+  width: 40px;
+  top: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel-control-next{
-    color: #000000;
-    text-shadow: none;
-    right: -80px;
-    height: 130px;
-    width: 40px;
-    top: 35%;             
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.carousel-control-next {
+  color: #000000;
+  text-shadow: none;
+  right: -80px;
+  height: 130px;
+  width: 40px;
+  top: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: brightness(200%);
-}
-.carousel-control-next:focus,
-.carousel-control-prev:focus{
-    border: 2px solid white;
+  filter: brightness(200%);
 }
 
-.carousel-inner{
-    width: 100%;
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+  border: 2px solid white;
+}
+
+.carousel-inner {
+  width: 100%;
 }
 
 .carousel-item {
@@ -294,30 +355,28 @@ footer p{
   width: 100%;
   max-height: 520px;
   aspect-ratio: 16 / 9;
-  background: #000; 
+  background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .carousel-image {
-  /* width: 100%;
-  height: 100%; */
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
-.carousel-indicators{
-    bottom:  -30px;
+.carousel-indicators {
+  bottom: -30px;
 }
 
-#about{
-    width: 100%;
+#about {
+  width: 100%;
 }
 
-.accordion-item{
-   border-color: #8f8f8f;
+.accordion-item {
+  border-color: #8f8f8f;
 }
 
 .my-accordion .accordion-item {
@@ -327,22 +386,22 @@ footer p{
   color: white;
 }
 
-.accordion-button.collapsed{
-    background-color: #212529;
-    color: white;
+.accordion-button.collapsed {
+  background-color: #212529;
+  color: white;
 }
 
-.accordion-button.collapsed:focus-visible{
-    border: 2px solid white;
+.accordion-button.collapsed:focus-visible {
+  border: 2px solid white;
 }
 
-.accordion-button{
-    color: #6BA3F6;
+.accordion-button {
+  color: #6BA3F6;
 }
 
-.accordion-button:focus{
-    outline: none;
-    box-shadow: none;
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .accordion-button::after {
@@ -354,79 +413,71 @@ footer p{
   color: white;
 }
 
-.resume-heading{
-    position: relative;
-    height: 100%;
+.resume-heading {
+  position: relative;
+  height: 100%;
 }
 
-.intro-heading-and-text{
-    width: 800px;
-    text-align: left;
-    margin-left: 0;
+.intro-heading-and-text {
+  width: 800px;
+  text-align: left;
+  margin-left: 0;
 }
 
-.resume-iframe{
-    width: 100%;
-    max-width: 800px;
-    height: 1000px;
-    margin: auto;
-    display: block;
+.resume-iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 1000px;
+  margin: auto;
+  display: block;
 }
 
-.resume-container{
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+.resume-container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-.field{
-    display: flex;
-    flex-direction: column;
+.field {
+  display: flex;
+  flex-direction: column;
 }
 
-.instructions-container{
-    /* max-width: 500px; */
-    /* display: flexbox; */
-    /* flex-direction: column; */
-    
-}
-
-.feedback-section{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    max-width: 900px;
-    margin: 25px auto 0 auto;
-    color: white;
-    background: linear-gradient(120deg, #1e188f, #587eb9);
-    border-radius: 15px;
-    height: auto;
-    width: clamp(440px, 40vw, 920px);
+.feedback-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 25px auto 0 auto;
+  color: white;
+  background: linear-gradient(120deg, #1e188f, #587eb9);
+  border-radius: 15px;
+  height: auto;
+  width: clamp(440px, 40vw, 920px);
 }
 
 .name-fields {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-columns: auto;
-    margin-bottom: 20px;
-    column-gap: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-columns: auto;
+  margin-bottom: 20px;
+  column-gap: 150px;
 }
 
 textarea {
-    resize: none;        
-    overflow-y: auto;    
+  resize: none;
+  overflow-y: auto;
 }
 
 .field-help {
-    font-size: 0.95rem;
-    opacity: 0.85;
-    line-height: 1.2;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.2;
 }
 
-.submit-btn{
-    margin-left: auto;
-    width: fit-content;
+.submit-btn {
+  margin-left: auto;
+  width: fit-content;
 }
-
