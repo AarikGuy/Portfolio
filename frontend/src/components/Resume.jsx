@@ -1,4 +1,4 @@
-import resumeDoc from '../assets/Resume_AarikGuy.pdf';
+import resumeDoc from '../assets/Resume.AarikGuy.pdf';
 
 function Resume(){
     return(
