@@ -6,6 +6,8 @@ function Projects() {
     <>
     <title>Projects | Portfolio</title>
     <div className="intro">
+    <div className="intro-wrapper">
+
       <div className="projects-intro">
         <h2>Projects</h2>
         <p>
@@ -19,6 +21,7 @@ function Projects() {
       <div className="projects-pic">
         <img src={projectsImage}></img>
       </div>
+    </div>
     </div>
 
     

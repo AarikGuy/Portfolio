@@ -481,3 +481,9 @@ textarea {
   margin-left: auto;
   width: fit-content;
 }
+
+.intro-wrapper{
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
