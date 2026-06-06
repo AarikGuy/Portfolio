@@ -25,6 +25,10 @@ h2 {
   margin: 10px 0;
 }
 
+h3 {
+    font-weight: 600;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -67,6 +71,12 @@ header {
   padding: 0;
   min-width: 0;
   flex-shrink: 1;
+}
+
+.nav-links a:focus,
+.nav-links a:hover,
+.nav-links a:focus-visible{
+    color: #bfd2f0;
 }
 
 .nav-links li {
@@ -174,8 +184,8 @@ nav a {
   }
 
   .nav-links {
-    gap: 1rem;
-    font-size: 0.95rem;
+    gap: .5rem;
+    font-size: 0.5rem;
   }
 }
 
