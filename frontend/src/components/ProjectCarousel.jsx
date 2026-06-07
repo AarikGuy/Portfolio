@@ -75,7 +75,7 @@ function ProjectCarousel() {
             />
             </div>
 
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption">
               <h5>{project.title}</h5>
               <p>{project.description}</p>
               {/* <p>
