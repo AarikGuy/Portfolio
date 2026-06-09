@@ -34,6 +34,7 @@ function ProjectCarousel() {
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
+        aria-label="Previous Slide"
       >
         <span className="carousel-control-prev-icon" />
       </button>
@@ -43,6 +44,7 @@ function ProjectCarousel() {
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
+        aria-label="Next Slide"
       >
         <span className="carousel-control-next-icon" />
       </button>
