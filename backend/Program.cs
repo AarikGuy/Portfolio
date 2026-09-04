@@ -8,7 +8,7 @@ builder.Services.AddCors(options =>
         policy =>
         {
             policy
-                .WithOrigins("https://aarikguy.com/")
+                .WithOrigins("https://aarikguy.com")
                 .AllowAnyHeader()
                 .AllowAnyMethod();
         });
