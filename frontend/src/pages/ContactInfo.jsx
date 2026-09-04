@@ -48,19 +48,19 @@ function ContactInfo() {
                 <div className="name-fields">
                     <div className="field">
                     <label htmlFor="firstName">First name:</label>
-                    <input type="text" id="firstName" onChange={handleChange}/>
+                    <input type="text" id="firstName" value={formData.firstName} onChange={handleChange}/>
                 </div>
                 <div className="field">
                     <label htmlFor="lastName">Last name:</label>
-                    <input type="text" id="lastName" onChange={handleChange}/>
+                    <input type="text" id="lastName" value={formData.lastName} onChange={handleChange}/>
                 </div>
                 <div className="field">
                     <label htmlFor="phone">Phone Number:</label>
-                    <input type="text" id="phone" onChange={handleChange}/>
+                    <input type="text" id="phone" value={formData.phone} onChange={handleChange}/>
                 </div>
                 <div className="field">
                     <label htmlFor="email">Email:</label>
-                    <input type="text" id="email" onChange={handleChange}/>
+                    <input type="text" id="email" value={formData.email} onChange={handleChange}/>
                 </div>
                 
                 </div>
@@ -73,7 +73,7 @@ function ContactInfo() {
                         my website, please feel free to share them. Any feedback is sincerely appreciated.
                     </p>
                     
-                    <textarea id="feedback" rows="6" placeholder="Write your feedback here..." aria-required="true" onChange={handleChange}/>
+                    <textarea id="feedback" rows="6" placeholder="Write your feedback here..." aria-required="true" value={formData.feedback} onChange={handleChange}/>
                 </div>
                 <div className="submit-btn">
                     <button type="submit">Submit</button>
