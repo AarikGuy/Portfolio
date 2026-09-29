@@ -49,6 +49,10 @@ body {
   color: #ffffff;
 }
 
+.required-star{
+  color: #FE5858;
+}
+
 .profile img {
   margin: 10px 0 10px 50%;
   width: clamp(140px, 15vw, 240px);
@@ -191,17 +195,6 @@ nav a {
     display: flex;
   }
 }
-
-/* @media (max-width: 700px) {
-  header {
-    padding: 1rem;
-  }
-
-  .nav-links {
-    gap: .5rem;
-    font-size: 0.5rem;
-  }
-} */
 
 .intro {
   display: flex;

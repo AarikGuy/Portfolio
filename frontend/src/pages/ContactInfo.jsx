@@ -10,6 +10,8 @@ function ContactInfo() {
         feedback: ""
     });
 
+    const [submitted, setSubmitted] = useState(false);
+
     const handleChange = (e) => {
         const { id, value } = e.target;
 
@@ -26,6 +28,8 @@ function ContactInfo() {
         try {
             await sendEmail(formData);
             console.log("Email sent!");
+
+            setSubmitted(true);
         } catch (err) {
             console.error("Error sending email:", err);
         }
@@ -42,8 +46,17 @@ function ContactInfo() {
                 </p>
             </div>
         </div>
-        <form onSubmit={handleSubmit} className="feedback-section">
+
+        {submitted ? (
+        <div>
+            <h3>Thank You!</h3>
+            <p>Thank you for your feedback! Your message has been successfully sent.</p>
+        </div>
+        ) : (
+    <form onSubmit={handleSubmit} className="feedback-section">
             <h3>Let's Connect</h3>
+            <p><span className="required-star">* </span>indicates a required field</p>
+           
             <div className="instructions-container">
                 <div className="name-fields">
                     <div className="field">
@@ -65,7 +78,7 @@ function ContactInfo() {
                 
                 </div>
                 <div className="field">
-                    <label htmlFor="feedback">Feedback:</label>
+                    <label htmlFor="feedback">Feedback: <span aria-hidden="true" className="required-star">*</span></label>
 
                     <p className="field-help">
                         If you have previously interviewed me, I would greatly appreciate any feedback on 
@@ -80,6 +93,8 @@ function ContactInfo() {
                 </div>
             </div>
         </form>
+        )}
+        
     </>
     );  
 }
