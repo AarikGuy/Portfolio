@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Accessible Portfolio Website
 
 A clean, responsive, and modern portfolio website to showcase my work, skills, and experience. Built with accessibility, performance, and maintainability in mind.
 
@@ -16,7 +16,7 @@ A clean, responsive, and modern portfolio website to showcase my work, skills, a
 - **Frontend:** HTML, CSS, JavaScript+React
 - **Styling:** [Bootstrap](https://getbootstrap.com/) 
 - **Build Tools:** Vite / Webpack
-- **Deployment:** Vercel
+- **Deployment:** Vercel / Azure
 
 
 ## 🚀 Getting Started
